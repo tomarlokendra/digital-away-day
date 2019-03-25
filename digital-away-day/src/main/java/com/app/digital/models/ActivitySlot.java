@@ -4,6 +4,8 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.app.digital.utils.Constants;
+
 /**
  * Class having information of activity slots.
  * 
@@ -76,7 +78,7 @@ public class ActivitySlot {
 	@Override
 	public String toString() {
 		StringBuffer buffer = new StringBuffer("");
-		activities.forEach(actvity -> buffer.append(actvity).append(System.getProperty("line.separator")));
+		activities.forEach(actvity -> buffer.append(actvity).append(System.getProperty(Constants.LINE_SEPARATOR)));
 		return buffer.toString();
 	}
 }

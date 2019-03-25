@@ -9,6 +9,7 @@ import com.app.digital.models.Activity;
 import com.app.digital.models.DigitalAwayDay;
 import com.app.digital.models.EventSlot;
 import com.app.digital.utils.ActivitiesReader;
+import com.app.digital.utils.Constants;
 
 /**
  * Entry point - read activities, add to Digital Away Day and print schedule.
@@ -19,7 +20,7 @@ import com.app.digital.utils.ActivitiesReader;
 public class StartDigitalAwayDay {
 
 	public static void main(String[] args) {
-		String INPUT = "activities.txt";
+		String INPUT = Constants.INPUT_FILE;
 		ActivitiesReader fileUtils = new ActivitiesReader();
 		List<Activity> activities = null;
 

@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.app.digital.exceptions.DigitalAwayDayException;
+import com.app.digital.utils.Constants;
 
 /**
  * DigitalAwayDay - can have multiple events
@@ -96,11 +97,11 @@ public class DigitalAwayDay {
 		StringBuffer buffer = new StringBuffer("");
 		Integer count = 1;
 		for (DayEvent dayEvent : dayEvents) {
-			buffer.append("Team " + count + ":").append(System.getProperty("line.separator")).append(dayEvent)
-					.append(System.getProperty("line.separator"));
+			buffer.append("Team " + count + ":").append(System.getProperty(Constants.LINE_SEPARATOR)).append(dayEvent)
+					.append(System.getProperty(Constants.LINE_SEPARATOR));
 			count++;
 		}
-		return buffer.append(System.getProperty("line.separator")).toString();
+		return buffer.append(System.getProperty(Constants.LINE_SEPARATOR)).toString();
 	}
 
 }
