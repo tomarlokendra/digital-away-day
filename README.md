@@ -12,6 +12,9 @@ digital-away-day uses the following technologies:
 - junit - Library for testing (version 4.12)
 - codehaus mojo plugin- Execute Java app plugin (version 1.6.0)
 
+# Assumptions
+- Input file format is fixed : [activity_name] [time_in_minutes]min.
+- Last activity slot of the day will use extra time if slot has not sufficient time.
 
 # Design 
 Project is implemented in a way that it supports multiple breaks during event or multiple events running simultaneously.
