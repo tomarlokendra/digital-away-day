@@ -16,25 +16,25 @@ digital-away-day uses the following technologies:
 # Design 
 Project is implemented in a way that it supports multiple breaks during event or multiple events running simultaneously.
 
-Activity          : Class to store activity with its start time and duration.
+- Activity          : Class to store activity with its start time and duration.
 
-ActivitySlot      : Class to store multiple activities, it has multiple activties, duration , a start time and an end time.
+- ActivitySlot      : Class to store multiple activities, it has multiple activties, duration , a start time and an end time.
 
-ExtraTimeSlot     : Child class of ActivitySlot, holds extra time. Overrides getAvailableDuration method of ActivitySlot to provide                         extra time.
+- ExtraTimeSlot     : Child class of ActivitySlot, holds extra time. Overrides getAvailableDuration method of ActivitySlot to provide                         extra time.
 
-EventSlot         : Class to store slot of an event. It has start time and end time. An even can have multiple slots.
+- EventSlot         : Class to store slot of an event. It has start time and end time. An even can have multiple slots.
 
-DayEvent          : This is an event of the day, there can be multiple events in the day which runs simultaneously.  Day event has                           multiple activity slots and extratime.
+- DayEvent          : This is an event of the day, there can be multiple events in the day which runs simultaneously.  Day event has                           multiple activity slots and extratime.
 
-DigitalAwayDay    : Class to represent digital away day, it can have multiple events.
+- DigitalAwayDay    : Class to represent digital away day, it can have multiple events.
 
-ActivitiesReader   : Reads input file of specific format.
+- ActivitiesReader   : Reads input file of specific format.
 
-DigitalAwayDayException : Custom exception.
+- DigitalAwayDayException : Custom exception.
 
-StartDigitalAwayDay : Entry point of application , having main method.
+- StartDigitalAwayDay : Entry point of application , having main method.
 
-activities.txt      :  Input for application, present in src/main/resources folder.
+- activities.txt      :  Input for application, present in src/main/resources folder.
 
 # Mappings
 
