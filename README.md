@@ -7,10 +7,10 @@ Lokendra Tomar
 # Technologies
 digital-away-day uses the following technologies:
 
-Java - 1.8
-Apache Maven - Build automation tool (version 3.6.0)
-junit - Library for testing (version 4.12)
-codehaus mojo plugin- Execute Java app plugin (version 1.6.0)
+- Java - 1.8
+- Apache Maven - Build automation tool (version 3.6.0)
+- junit - Library for testing (version 4.12)
+- codehaus mojo plugin- Execute Java app plugin (version 1.6.0)
 
 
 # Design 
@@ -44,8 +44,8 @@ DigitalAwayDay 1------>* DayEvent 1------->* AvtivitySlot(extended by ExtraTimeS
  - digital-away-day requires java 1.8 and maven 3.x to run.
  - Input file activities.txt is present in src/main/resources folder
  
- Please use one of the below two ways to run the application :
- Way-1 :
+ Please use one of the below two ways to run the application
+ - Way-1 :
  1. Checkout/download project.
  2. Unzip the folder if its a zip.
  3. Open a terminal and go to proejct folder ( digital-away-day)
@@ -57,7 +57,7 @@ DigitalAwayDay 1------>* DayEvent 1------->* AvtivitySlot(extended by ExtraTimeS
  
  OR
  
- Way 2:
+ - Way 2:
  1. Checkout/download project.
  2. Unzip the folder if its a zip.
  3. Import project as maven project in eclipse or STS.
