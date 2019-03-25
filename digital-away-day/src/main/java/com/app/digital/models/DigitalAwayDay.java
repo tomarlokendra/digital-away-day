@@ -17,8 +17,7 @@ public class DigitalAwayDay {
 
 	List<DayEvent> dayEvents = new ArrayList<DayEvent>();
 
-	public DigitalAwayDay(List<EventSlot> eventSlots, Integer eveningExtraTime, Integer numberOfEvents)
-			throws DigitalAwayDayException {
+	public DigitalAwayDay(List<EventSlot> eventSlots, Integer eveningExtraTime, Integer numberOfEvents) throws DigitalAwayDayException {
 		for (int i = 0; i < numberOfEvents; i++) {
 			dayEvents.add(new DayEvent(eventSlots, eveningExtraTime));
 		}
@@ -38,8 +37,7 @@ public class DigitalAwayDay {
 		for (Activity activity : activities) {
 			boolean isActivityAdded = this.addActivity(activity);
 			if (!isActivityAdded) {
-				throw new DigitalAwayDayException(
-						"addActivities : There was a problem inserting activity (" + activity.getName() + ")");
+				throw new DigitalAwayDayException("addActivities : There was a problem inserting activity (" + activity.getName() + ")");
 			}
 		}
 	}
@@ -97,8 +95,7 @@ public class DigitalAwayDay {
 		StringBuffer buffer = new StringBuffer("");
 		Integer count = 1;
 		for (DayEvent dayEvent : dayEvents) {
-			buffer.append("Team " + count + ":").append(System.getProperty(Constants.LINE_SEPARATOR)).append(dayEvent)
-					.append(System.getProperty(Constants.LINE_SEPARATOR));
+			buffer.append("Team " + count + ":").append(System.getProperty(Constants.LINE_SEPARATOR)).append(dayEvent).append(System.getProperty(Constants.LINE_SEPARATOR));
 			count++;
 		}
 		return buffer.append(System.getProperty(Constants.LINE_SEPARATOR)).toString();

@@ -44,15 +44,12 @@ public class ActivitiesReader {
 					activities.add(new Activity(line.substring(0, line.lastIndexOf(" ")), duration));
 				} else {
 					lines.close();
-					throw new DigitalAwayDayException(
-							"ActivitiesReader - loadActivitiesFromFile: File line " + line + " has not a valid format");
+					throw new DigitalAwayDayException("ActivitiesReader - loadActivitiesFromFile: File line " + line + " has not a valid format");
 				}
 			}
 			lines.close();
 		} catch (Exception ex) {
-			throw new DigitalAwayDayException(
-					"ActivitiesReader - loadActivitiesFromFile: there was a problem loading activities from file:"
-							+ ex.getLocalizedMessage());
+			throw new DigitalAwayDayException("ActivitiesReader - loadActivitiesFromFile: there was a problem loading activities from file:" + ex.getLocalizedMessage());
 		}
 		return activities;
 	}

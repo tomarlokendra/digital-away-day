@@ -25,14 +25,10 @@ public class DayEvent {
 		for (EventSlot eventSlot : eventSlots) {
 			if (i < (eventSlots.size() - 1)) {
 				this.validateSlot(eventSlot.getStartTime(), eventSlot.getEndTime());
-				activitySlots
-						.add(new ActivitySlot(getActivitySlotSize(eventSlot.getStartTime(), eventSlot.getEndTime()),
-								eventSlot.getStartTime(), eventSlot.getEndTime()));
+				activitySlots.add(new ActivitySlot(getActivitySlotSize(eventSlot.getStartTime(), eventSlot.getEndTime()), eventSlot.getStartTime(), eventSlot.getEndTime()));
 				i++;
 			} else {
-				activitySlots
-						.add(new ExtraTimeSlot(getActivitySlotSize(eventSlot.getStartTime(), eventSlot.getEndTime()),
-								eventSlot.getStartTime(), eventSlot.getEndTime(), eveningExtraTime));
+				activitySlots.add(new ExtraTimeSlot(getActivitySlotSize(eventSlot.getStartTime(), eventSlot.getEndTime()), eventSlot.getStartTime(), eventSlot.getEndTime(), eveningExtraTime));
 			}
 		}
 		this.morningStartTime = eventSlots.get(0).getStartTime();

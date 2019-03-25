@@ -57,8 +57,7 @@ public class Activity {
 		} else {
 			startTimeStr = this.startTime.toString() + " am";
 		}
-		buffer.append(startTimeStr).append(" : " + this.getName() + " ")
-				.append((this.duration == 15 ? SPRINT : this.duration + "min"));
+		buffer.append(startTimeStr).append(" : " + this.getName() + " ").append((this.duration == 15 ? SPRINT : this.duration + "min"));
 		return buffer.toString();
 
 	}
