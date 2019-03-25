@@ -64,8 +64,9 @@ DigitalAwayDay 1------>* DayEvent 1------->* AvtivitySlot(extended by ExtraTimeS
  1. Checkout/download project.
  2. Unzip the folder if its a zip.
  3. Import project as maven project in eclipse or STS.
- 4. Right click on class StartDigitalAwayDay.java and runs as java application.
- 5. Output will be displayed in console.
+ 4. Right click on project go to mava->update project
+ 5. Right click on class StartDigitalAwayDay.java and runs as java application.
+ 6. Output will be displayed in console.
  
  
  
