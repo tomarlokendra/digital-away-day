@@ -48,8 +48,8 @@ DigitalAwayDay 1------>* DayEvent 1------->* AvtivitySlot(extended by ExtraTimeS
  - Way-1 :
  1. Checkout/download project.
  2. Unzip the folder if its a zip.
- 3. Open a terminal and go to proejct folder ( digital-away-day)
- 3. Execute below commnad to compile the code
+ 3. Open a terminal and go to project folder ( digital-away-day)
+ 3. Execute below command to compile the code
     $ mvn clean package
  4. Execute below commnad to run the application
     $ mvn exec:java
