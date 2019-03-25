@@ -25,7 +25,7 @@ Project is implemented in a way that it supports multiple breaks during event or
 
 - ExtraTimeSlot     : Child class of ActivitySlot, holds extra time. Overrides getAvailableDuration method of ActivitySlot to provide                         extra time.
 
-- EventSlot         : Class to store slot of an event. It has start time and end time. An even can have multiple slots.
+- EventSlot         : Class to store slot of an event. It has start time and end time. An event can have multiple slots.
 
 - DayEvent          : This is an event of the day, there can be multiple events in the day which runs simultaneously.  Day event has                           multiple activity slots and extratime.
 
